@@ -1,0 +1,219 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+#score-board {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px auto;
+  color: palevioletred;
+}
+
+#user-score,
+#comp-score {
+  padding: 0 10px;
+}
+
+
+/* BODY */
+body {
+    background-color: antiquewhite;
+    color: pink;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+/* HEADINGS */
+h1 {
+    text-decoration: palevioletred wavy underline;
+    text-align: center;
+}
+
+#h1 {
+    font-weight: 900;
+    font-size: 50px;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+#one {
+    font-weight: normal;
+}
+
+/* TEXT */
+p {
+    text-align: center;
+}
+
+/* NAVBAR */
+#navbar {
+    height: 60px;
+    background-color:palevioletred;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+#kibby{
+   height: 50px
+   width: 50px;
+}
+
+#navbar a {
+    margin: 0 15px;
+    color: pink;
+    text-decoration: none;
+}
+
+#jeep {
+    padding: 5px;
+    left: 50px;
+}
+
+/* BUTTON */
+button {
+    background-color: pink;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+/* BUTTON-56 */
+.button-56 {
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    color: #111;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    padding: 0 20px;
+    position: relative;
+    right: 40px;
+}
+
+.button-56::after {
+    content: "";
+    background-color: #111;
+    border-radius: 8px;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    transform: translate(6px, 6px);
+    transition: transform 0.2s ease-out;
+    z-index: -1;
+}
+
+.button-56:hover::after {
+    transform: translate(0, 0);
+}
+
+/* CONTENT CONTAINER */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+}
+
+/* MEOW FLEX BOX */
+#contain {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+/* MEOW BOXES */
+.meow-box {
+    width: 100px;
+    height: 100px;
+    border: 2px dotted pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MEOW COLORS */
+#a { background-color: plum; }
+#b { background-color: palevioletred; }
+#c { background-color: papayawhip; }
+#d { background-color: lavenderblush; }
+#e { background-color: wheat; }
+
+/* BOXES */
+#box1 {
+    background-color: rgba(0,0,255,0.25);
+    background-image: url("kitty.jpg");
+    width: 100%;
+    height: 70px;
+    margin: 30px auto;
+}
+
+#box2 {
+    background-color: rgba(0,0,255,0.2);
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+/* LINKS */
+a {
+    color: pink;
+    font-size: 1rem;
+}
+
+/* VIDEO */
+#bebe {
+    display: block;
+    margin: 40px auto;
+}
+   @media(max-width:200px){
+    div{
+        background-color: navajowhite;
+
+    } 
+  /*img:hover{
+    transform: translateX(400px);
+    transition: all 2s ease-in-out;
+  }*/
+  #kiki{
+    right: 200px;
+  }
+  @keyframes color{
+    from{
+        background-color: antiquewhite
+    }to{
+        background-color: aliceblue;
+    }
+  }
+  h3{
+    animation-name: color ;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+  }
+#logo{
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#meow{
+    color:azure;
+}
+
+.contain{
+    border-radius: 50%;
+
+}
+.contain:hover {
+    opacity = 0.5;
+    cursor: pointer
+}
